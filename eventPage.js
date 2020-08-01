@@ -14,6 +14,12 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
         link.lastIndexOf("id"), 
         link.lastIndexOf("&")
       );
+      if(myid.length<=3){
+        myid = link.substring(
+          link.lastIndexOf("id")
+        );
+      }
+      console.log(myid)
       link = "https://item.taobao.com/item.htm?"+myid
     }
     chrome.tabs.create({ url: link });
