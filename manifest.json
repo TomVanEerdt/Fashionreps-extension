@@ -1,0 +1,20 @@
+{
+    "name": "Fashionreps Link Converter ",
+    "description": "Remove spaces from links and converts taobao mobile links to desktop links",
+    "version": "2.0",
+    "manifest_version": 2,
+    "permissions": [
+      "contextMenus"
+    ],
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+    "icons":{
+      "128":"img/fashionreps.png",
+      "48":"img/fashionreps.png",
+      "16":"img/fashionreps.png"
+    },
+    "background":{
+      "scripts":["eventPage.js"]
+    }
+}
